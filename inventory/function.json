@@ -1,0 +1,29 @@
+{
+  "disabled": false,
+  "bindings": [
+    {
+      "authLevel": "function",
+      "name": "req",
+      "type": "httpTrigger",
+      "direction": "in",
+      "route": "inventory/{productid}",
+      "methods": [
+        "get"
+      ]
+    },
+    {
+      "name": "inventory",
+      "type": "table",
+      "tableName": "inventory",
+      "partitionKey": "products",
+      "rowKey": "{productid}",
+      "connection": "WEBSITE_CONTENTAZUREFILECONNECTIONSTRING",
+      "direction": "in"
+    },
+    {
+      "name": "$return",
+      "type": "http",
+      "direction": "out"
+    }
+  ]
+}

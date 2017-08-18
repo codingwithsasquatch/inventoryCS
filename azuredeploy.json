@@ -100,22 +100,6 @@
             {
               "name": "WEBSITE_NODE_DEFAULT_VERSION",
               "value": "6.5.0"
-            },
-            {
-              "name": "InputStorageConnection",
-              "value": "[if(equals(parameters('funcInputStorageAcount'),'default'), concat('DefaultEndpointsProtocol=https;AccountName=',variables('storageAccountName'),';AccountKey=',listkeys(resourceId('Microsoft.Storage/storageAccounts', variables('storageAccountName')), '2015-05-01-preview').key1,';'), parameters('funcInputStorageAcount'))]"
-            },
-            {
-              "name": "OutputStorageConnection",
-              "value": "[if(equals(parameters('funcOutputStorageAcount'),'default'), concat('DefaultEndpointsProtocol=https;AccountName=',variables('storageAccountName'),';AccountKey=',listkeys(resourceId('Microsoft.Storage/storageAccounts', variables('storageAccountName')), '2015-05-01-preview').key1,';'), parameters('funcOutputStorageAcount'))]"
-            },
-            {
-              "name": "InputPath",
-              "value": "[parameters('InputPath')]"
-            },
-            {
-              "name": "OutputPath",
-              "value": "[parameters('OutputPath')]"
             }
           ]
         }

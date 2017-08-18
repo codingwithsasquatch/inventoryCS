@@ -1,6 +1,6 @@
 # Inventory - C<span>#</span>
 
-This is a simple Inventory REST API that responds with the invetory status of the a particular item.  The details are stored in an Azure Storage Table called "inventory" in th following format
+This is a simple Inventory REST API that responds with the inventory status of the a particular item.  The details are stored in an Azure Storage Table called "inventory" in th following format
 
 | PartitionKey | "products" |
 | ------- | -------- | ------ |

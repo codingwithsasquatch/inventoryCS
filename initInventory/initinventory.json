@@ -1,0 +1,23 @@
+[
+ {
+   "PartitionKey": "products",
+   "RowKey": 1,
+   "Name": null,
+   "OnHand": 20,
+   "Ordered": 50
+ },
+ {
+   "PartitionKey": "products",
+   "RowKey": 2,
+   "Name": "soap",
+   "OnHand": 15,
+   "Ordered": 30
+ },
+ {
+   "PartitionKey": "products",
+   "RowKey": 3,
+   "Name": "water",
+   "OnHand": 50,
+   "Ordered": 10
+ }
+]

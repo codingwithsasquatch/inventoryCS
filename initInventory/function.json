@@ -12,7 +12,7 @@
       "type": "table",
       "tableName": "inventory",
       "partitionKey": "products",
-      "rowKey": "0",
+      "rowKey": "1",
       "connection": "WEBSITE_CONTENTAZUREFILECONNECTIONSTRING",
       "direction": "in"
     },

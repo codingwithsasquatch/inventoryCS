@@ -1,9 +1,10 @@
 # Inventory - C<span>#</span>
 
-[![Deploy to Azure](http://azuredeploy.net/deploybutton.svg)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fcodingwithsasquatch%2FinventoryCS%2Fmaster%2Fazuredeploy.json)
+[![Deploy to Azure](https://azuredeploy.net/deploybutton.svg)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fcodingwithsasquatch%2FinventoryCS%2Fmaster%2Fazuredeploy.json)
 
 This is a simple Inventory REST API that responds with the inventory status of the a particular item.  The details are stored in an Azure Storage Table called "inventory" in th following format
-
+| field | value |
+| --- | --- |
 | PartitionKey | "products" |
 | RowKey | the productid |
 | Name | the product name |
